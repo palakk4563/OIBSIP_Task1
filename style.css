@@ -8,13 +8,11 @@
 }
 
 .container{
-    max-width: 90vw;
+    max-width: 90vw; 
     min-height: 100vh;
-    margin-top: 50px;
-     margin-left: auto;
-    margin-right: auto; 
+    margin: 50px auto 0px;
     font-family: cursive;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     padding: 15px;
     background: rgba(195, 195, 49, 0.137);
   
@@ -113,39 +111,36 @@ display: inline-block;
 
 .main{
     /* border: 1px solid red; */
-    padding : 100px;
+    margin-top: 100px;
 }
 .main .title{
     /* border: 1px solid yellow; */
     text-align: center;
 }
 .main .feature{
-    /* border: 1px solid black; */
-    margin-left: auto;
-    margin-right: auto;
+    /* border: 1px solid rgb(133, 14, 14); */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-        margin-top: 100px;
-        margin-bottom: 20px;
+    margin: 100px 0px 20px;
       
 } 
 .main .feature .img{
     /* border: 1px solid rgb(179, 29, 29); */
     flex-basis:20%;
-
-    
 } 
 .main .feature .img img{
-    width: 400px;
-        height: 300px;
-        object-fit: contain;
+    max-width: 400px;
+    max-height: 300px;
+    object-fit: contain;
 }
 .main .feature .content{
     /* border: 1px solid black; */
-    flex-basis: 50%;
+    flex-basis: 45%;
     background: #3e828e35;
     border-radius: 10px;
     box-shadow: 10px 20px 30px rgba(68, 65, 65, 0.698);
+    font-size: 20px;
 }  
 
 .content .heading_txt{
@@ -154,7 +149,6 @@ display: inline-block;
 }
 
 .content .subheading_txt{
-    font-size: 20px;
     margin : 0 30px 0;
     text-align: center;
 }
@@ -219,22 +213,31 @@ display: inline-block;
     margin-top: 10px;
 }
 .row-server{
+     /* border: 1px solid rgb(0, 255, 106); */
     display: flex;
     justify-content: center;
+    margin: 15px 0px;
+    width:100%;
 }
 .row-server .server_image{
-   
-    width: 800px;
-
+    /* border: 1px solid rgb(0, 255, 106); */
+    max-width: 800px;
 }
 .server_image img{
-    width:100%;
-    height:100%;
+     width:100%; 
 }
 @media screen and (max-width: 600px) {
     .navbar{
         visibility: hidden;
     }
+    .main .feature .content{
+    flex-basis: 95%;
+    }
+    .container{
+        max-width: 100vw;
+        margin: 0px;
+    }
+}
 /* --------------footer---------------------------- */
 .footer{
     
